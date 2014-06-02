@@ -47,7 +47,7 @@ class CachedDbManager extends \yii\rbac\DbManager
                 parent::checkAccess($userId, $permissionName, $params)
             ];
 
-            Yii::$app->cache->set($cacheKey, $check, $this->lifetime);
+            $this->getCache()->set($cacheKey, $check, $this->lifetime);
         }
 
         return $check[0];
@@ -55,6 +55,6 @@ class CachedDbManager extends \yii\rbac\DbManager
     
     private function getCache()
     {
-        return Yii::$app->get($this->cache);
+        return \Yii::$app->get($this->cache);
     }
 }
