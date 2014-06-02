@@ -21,6 +21,9 @@ class CachedDbManager extends \yii\rbac\DbManager
      */
     public $lifetime = 3600;
 
+    /**
+     * @var string cache prefix to ovoid collisions
+     */
     public $cachePrefix = 'CachedDbManager_';
 
     public function checkAccess($userId, $permissionName, $params = [])
