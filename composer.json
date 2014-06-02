@@ -1,6 +1,6 @@
 {
 	"name": "bethrezen/yii2-cached-rbac-dbmanager",
-	"description": "Allows caching of permissions in yii\rbac\DbManager ",
+	"description": "Allows caching of permissions in yii\\rbac\\DbManager ",
 	"type": "yii2-extension",
 	"keywords": ["yii2","rbac","cache","dbmanager"],
 	"license": "GPL-3.0+",
