@@ -2,6 +2,8 @@ Cached DBManager for yii2 RBAC
 ==============================
 Allows caching of permissions in yii\rbac\DbManager 
 
+**WARNING** Yii2 now supports native cache for yii\rbac\DbManager. See https://github.com/yiisoft/yii2/issues/3168
+
 Installation
 ------------
 
